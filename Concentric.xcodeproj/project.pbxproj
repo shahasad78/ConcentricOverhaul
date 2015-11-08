@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CBDB918B1BEFD00500647F5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDB918A1BEFD00500647F5E /* main.m */; };
+		CBDB918E1BEFD00500647F5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDB918D1BEFD00500647F5E /* AppDelegate.m */; };
+		CBDB91911BEFD00500647F5E /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDB91901BEFD00500647F5E /* GameScene.m */; };
+		CBDB91931BEFD00500647F5E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CBDB91921BEFD00500647F5E /* GameScene.sks */; };
+		CBDB91961BEFD00500647F5E /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDB91951BEFD00500647F5E /* GameViewController.m */; };
+		CBDB91991BEFD00500647F5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBDB91971BEFD00500647F5E /* Main.storyboard */; };
+		CBDB919B1BEFD00500647F5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBDB919A1BEFD00500647F5E /* Assets.xcassets */; };
+		CBDB919E1BEFD00500647F5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBDB919C1BEFD00500647F5E /* LaunchScreen.storyboard */; };
+		CBDB91A91BEFD00600647F5E /* ConcentricTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDB91A81BEFD00600647F5E /* ConcentricTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBDB91A51BEFD00600647F5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBDB917E1BEFD00500647F5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBDB91851BEFD00500647F5E;
+			remoteInfo = Concentric;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CBDB91861BEFD00500647F5E /* Concentric.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concentric.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBDB918A1BEFD00500647F5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CBDB918C1BEFD00500647F5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CBDB918D1BEFD00500647F5E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CBDB918F1BEFD00500647F5E /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		CBDB91901BEFD00500647F5E /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		CBDB91921BEFD00500647F5E /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		CBDB91941BEFD00500647F5E /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		CBDB91951BEFD00500647F5E /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		CBDB91981BEFD00500647F5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBDB919A1BEFD00500647F5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBDB919D1BEFD00500647F5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CBDB919F1BEFD00500647F5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBDB91A41BEFD00600647F5E /* ConcentricTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConcentricTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBDB91A81BEFD00600647F5E /* ConcentricTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcentricTests.m; sourceTree = "<group>"; };
+		CBDB91AA1BEFD00600647F5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBDB91831BEFD00500647F5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBDB91A11BEFD00600647F5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CBDB917D1BEFD00500647F5E = {
+			isa = PBXGroup;
+			children = (
+				CBDB91881BEFD00500647F5E /* Concentric */,
+				CBDB91A71BEFD00600647F5E /* ConcentricTests */,
+				CBDB91871BEFD00500647F5E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBDB91871BEFD00500647F5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBDB91861BEFD00500647F5E /* Concentric.app */,
+				CBDB91A41BEFD00600647F5E /* ConcentricTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBDB91881BEFD00500647F5E /* Concentric */ = {
+			isa = PBXGroup;
+			children = (
+				CBDB918C1BEFD00500647F5E /* AppDelegate.h */,
+				CBDB918D1BEFD00500647F5E /* AppDelegate.m */,
+				CBDB918F1BEFD00500647F5E /* GameScene.h */,
+				CBDB91901BEFD00500647F5E /* GameScene.m */,
+				CBDB91921BEFD00500647F5E /* GameScene.sks */,
+				CBDB91941BEFD00500647F5E /* GameViewController.h */,
+				CBDB91951BEFD00500647F5E /* GameViewController.m */,
+				CBDB91971BEFD00500647F5E /* Main.storyboard */,
+				CBDB919A1BEFD00500647F5E /* Assets.xcassets */,
+				CBDB919C1BEFD00500647F5E /* LaunchScreen.storyboard */,
+				CBDB919F1BEFD00500647F5E /* Info.plist */,
+				CBDB91891BEFD00500647F5E /* Supporting Files */,
+			);
+			path = Concentric;
+			sourceTree = "<group>";
+		};
+		CBDB91891BEFD00500647F5E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBDB918A1BEFD00500647F5E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBDB91A71BEFD00600647F5E /* ConcentricTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBDB91A81BEFD00600647F5E /* ConcentricTests.m */,
+				CBDB91AA1BEFD00600647F5E /* Info.plist */,
+			);
+			path = ConcentricTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBDB91851BEFD00500647F5E /* Concentric */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBDB91AD1BEFD00600647F5E /* Build configuration list for PBXNativeTarget "Concentric" */;
+			buildPhases = (
+				CBDB91821BEFD00500647F5E /* Sources */,
+				CBDB91831BEFD00500647F5E /* Frameworks */,
+				CBDB91841BEFD00500647F5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Concentric;
+			productName = Concentric;
+			productReference = CBDB91861BEFD00500647F5E /* Concentric.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CBDB91A31BEFD00600647F5E /* ConcentricTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBDB91B01BEFD00600647F5E /* Build configuration list for PBXNativeTarget "ConcentricTests" */;
+			buildPhases = (
+				CBDB91A01BEFD00600647F5E /* Sources */,
+				CBDB91A11BEFD00600647F5E /* Frameworks */,
+				CBDB91A21BEFD00600647F5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBDB91A61BEFD00600647F5E /* PBXTargetDependency */,
+			);
+			name = ConcentricTests;
+			productName = ConcentricTests;
+			productReference = CBDB91A41BEFD00600647F5E /* ConcentricTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBDB917E1BEFD00500647F5E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Shotty Shack Games";
+				TargetAttributes = {
+					CBDB91851BEFD00500647F5E = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					CBDB91A31BEFD00600647F5E = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = CBDB91851BEFD00500647F5E;
+					};
+				};
+			};
+			buildConfigurationList = CBDB91811BEFD00500647F5E /* Build configuration list for PBXProject "Concentric" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBDB917D1BEFD00500647F5E;
+			productRefGroup = CBDB91871BEFD00500647F5E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBDB91851BEFD00500647F5E /* Concentric */,
+				CBDB91A31BEFD00600647F5E /* ConcentricTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBDB91841BEFD00500647F5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBDB91931BEFD00500647F5E /* GameScene.sks in Resources */,
+				CBDB919E1BEFD00500647F5E /* LaunchScreen.storyboard in Resources */,
+				CBDB919B1BEFD00500647F5E /* Assets.xcassets in Resources */,
+				CBDB91991BEFD00500647F5E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBDB91A21BEFD00600647F5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBDB91821BEFD00500647F5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBDB91961BEFD00500647F5E /* GameViewController.m in Sources */,
+				CBDB918E1BEFD00500647F5E /* AppDelegate.m in Sources */,
+				CBDB91911BEFD00500647F5E /* GameScene.m in Sources */,
+				CBDB918B1BEFD00500647F5E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBDB91A01BEFD00600647F5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBDB91A91BEFD00600647F5E /* ConcentricTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBDB91A61BEFD00600647F5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBDB91851BEFD00500647F5E /* Concentric */;
+			targetProxy = CBDB91A51BEFD00600647F5E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CBDB91971BEFD00500647F5E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBDB91981BEFD00500647F5E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CBDB919C1BEFD00500647F5E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBDB919D1BEFD00500647F5E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBDB91AB1BEFD00600647F5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CBDB91AC1BEFD00600647F5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBDB91AE1BEFD00600647F5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Concentric/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ShottyShackGames.Concentric;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CBDB91AF1BEFD00600647F5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Concentric/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ShottyShackGames.Concentric;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CBDB91B11BEFD00600647F5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = ConcentricTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ShottyShackGames.ConcentricTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Concentric.app/Concentric";
+			};
+			name = Debug;
+		};
+		CBDB91B21BEFD00600647F5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ConcentricTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ShottyShackGames.ConcentricTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Concentric.app/Concentric";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBDB91811BEFD00500647F5E /* Build configuration list for PBXProject "Concentric" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBDB91AB1BEFD00600647F5E /* Debug */,
+				CBDB91AC1BEFD00600647F5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBDB91AD1BEFD00600647F5E /* Build configuration list for PBXNativeTarget "Concentric" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBDB91AE1BEFD00600647F5E /* Debug */,
+				CBDB91AF1BEFD00600647F5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CBDB91B01BEFD00600647F5E /* Build configuration list for PBXNativeTarget "ConcentricTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBDB91B11BEFD00600647F5E /* Debug */,
+				CBDB91B21BEFD00600647F5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBDB917E1BEFD00500647F5E /* Project object */;
+}
