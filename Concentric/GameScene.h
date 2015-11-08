@@ -8,6 +8,25 @@
 
 #import <SpriteKit/SpriteKit.h>
 
-@interface GameScene : SKScene
+
+#pragma mark - Protocol Declarations
+
+@protocol CustomNodeEvents <NSObject>
+
+
+- (void) didMoveToSceneWithUserData:(NSDictionary  * _Nullable)userData;
+
+@end
+
+@protocol InteractiveNode <NSObject>
+
+- (void) interact;
+
+@end
+
+
+#pragma mark - Class declaration
+
+@interface GameScene : SKScene <SKPhysicsContactDelegate>
 
 @end

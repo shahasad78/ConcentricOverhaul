@@ -7,19 +7,35 @@
 //
 
 #import "GameScene.h"
+#import "PlayerShipNode.h"
+#import "PhysicsUtil.h"
+
+@interface GameScene ()
+
+
+
+@end
+
 
 @implementation GameScene
 
+#pragma mark - View Life Cycle Methods
 -(void)didMoveToView:(SKView *)view {
-    /* Setup your scene here */
-    SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
-    
-    myLabel.text = @"Hello, World!";
-    myLabel.fontSize = 45;
-    myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-                                   CGRectGetMidY(self.frame));
-    
-    [self addChild:myLabel];
+
+    // TODO: Read Plist and get level specific data to pass to nodes
+
+    [self enumerateChildNodesWithName:@"//*" usingBlock:^(SKNode * _Nonnull node, BOOL * _Nonnull stop) {
+        if ([node conformsToProtocol:@protocol(CustomNodeEvents) ]) {
+            if ([node.name isEqualToString:kNodeName.asteroid]) {
+                NSValue *asteroidRect = [NSValue valueWithCGRect:CGRectMake(0, 0, 400, 400)];
+                NSDictionary *asteroidDict = @{kAsteroidProperty.field:@{kAsteroidProperty.fieldRect:asteroidRect, kAsteroidProperty.density:@100 }};
+                [(SKNode<CustomNodeEvents> *)node didMoveToSceneWithUserData:asteroidDict];
+            } else {
+                [(SKNode<CustomNodeEvents> *)node didMoveToSceneWithUserData:nil];
+            }
+        }
+    }];
+
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -27,21 +43,10 @@
     
     for (UITouch *touch in touches) {
         CGPoint location = [touch locationInNode:self];
-        
-        SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
-        
-        sprite.xScale = 0.5;
-        sprite.yScale = 0.5;
-        sprite.position = location;
-        
-        SKAction *action = [SKAction rotateByAngle:M_PI duration:1];
-        
-        [sprite runAction:[SKAction repeatActionForever:action]];
-        
-        [self addChild:sprite];
-    }
+        }
 }
 
+#pragma mark - Render Sequence Methods
 -(void)update:(CFTimeInterval)currentTime {
     /* Called before each frame is rendered */
 }
