@@ -9,18 +9,21 @@
 #import "PlanetNode.h"
 #import "PhysicsUtil.h"
 
+@interface PlanetNode ()
+
+@property (nonatomic) CGFloat radius;
+
+@end
+
 @implementation PlanetNode
 
 - (void)didMoveToSceneWithUserData:(NSDictionary *)userData {
     if (userData) {
-        NSDictionary *planetDict;
-        if ((planetDict = [userData objectForKey:kAsteroidProperty.field])) {
-            NSLog(@"Data:\n%@", userData);
-            CGRect fieldRect = [[planetDict objectForKey:kAsteroidProperty.fieldRect] CGRectValue];
-            NSUInteger density = [[planetDict objectForKey:kAsteroidProperty.density] integerValue];
-            
-            }
-        }
+        self.radius = [[userData valueForKey:kPlanetProperty.gravityRadius] floatValue];
+        // TODO: Incorporate a more dynamic planet generator
+        __unused PlanetType planetType = [[userData valueForKey:kPlanetProperty.planetType] integerValue];
+        [self setupPhysicsBodyWithGravityRadius:self.radius];
+        [self createGravityCircle];
     }
 
 }
@@ -32,16 +35,20 @@
     planet.yScale = size;
     
     [planet setupPhysicsBodyWithGravityRadius:radius];
-    
-    SKShapeNode *gravityCircle = [SKShapeNode shapeNodeWithCircleOfRadius:radius];
-    gravityCircle.fillColor = [SKColor darkGrayColor];
-    gravityCircle.alpha = 0.25;
-    gravityCircle.strokeColor = [SKColor whiteColor];
-    [planet addChild:gravityCircle];
-    
+
+    [planet createGravityCircle];
+
     return planet;
 }
 
+- (void) createGravityCircle {
+    SKShapeNode *gravityCircle = [SKShapeNode shapeNodeWithCircleOfRadius:self.radius];
+    gravityCircle.fillColor = [SKColor darkGrayColor];
+    gravityCircle.alpha = 0.25;
+    gravityCircle.strokeColor = [SKColor whiteColor];
+    gravityCircle.glowWidth = 1.0;
+    [self addChild:gravityCircle];
+}
 
 - (void) setupPhysicsBodyWithGravityRadius:(CGFloat)radius {
     

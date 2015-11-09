@@ -56,14 +56,15 @@
     [self.playerShip addObserver:self forKeyPath:@"isDraggingShip" options:NSKeyValueObservingOptionNew context:nil];
 
     [self enumerateChildNodesWithName:@"//*" usingBlock:^(SKNode * _Nonnull node, BOOL * _Nonnull stop) {
+        NSDictionary *userData;
         if ([node conformsToProtocol:@protocol(CustomNodeEvents) ]) {
             if ([node.name isEqualToString:kNodeName.asteroid]) {
                 NSValue *asteroidRect = [NSValue valueWithCGRect:CGRectMake(0, 0, 400, 400)];
-                NSDictionary *asteroidDict = @{kAsteroidProperty.field:@{kAsteroidProperty.fieldRect:asteroidRect, kAsteroidProperty.density:@100 }};
-                [(SKNode<CustomNodeEvents> *)node didMoveToSceneWithUserData:asteroidDict];
-            } else {
-                [(SKNode<CustomNodeEvents> *)node didMoveToSceneWithUserData:nil];
+                userData = @{kAsteroidProperty.field:@{kAsteroidProperty.fieldRect:asteroidRect, kAsteroidProperty.density:@100 }};
+            } else if ([node.name isEqualToString:kNodeName.planet]) {
+                userData = @{kPlanetProperty.gravityRadius:@(800)};
             }
+            [(SKNode<CustomNodeEvents> *)node didMoveToSceneWithUserData:userData];
         }
     }];
 
