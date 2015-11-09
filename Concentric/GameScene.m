@@ -48,7 +48,7 @@
     NSString *currentScene = self.gameData.currentScene;
     NSString *levelPath = [[NSBundle mainBundle] pathForResource:currentScene ofType:@"plist"];
     NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:levelPath];
-    // TODO: Read Plist dict and get level specific data to pass to nodes
+    // TODO: Read Plist dict    and get level specific data to pass to nodes
 
 
     // Setup PlayerShip and subscribe to its state changes

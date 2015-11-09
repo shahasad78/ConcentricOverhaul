@@ -106,7 +106,7 @@ extern NSString *const AsteroidPlistKey;
 
 /*!
  * @namespace kCircleAnimationActionKey
- * @abstract Contains the names of the SKAction keys applied to a circle. Keys can be used to retrieve and cancel an animation.
+ * @abstract Contains the names of the plist keys for asteroid properties.
  * @updated 11-03-2015
  */
 extern const struct kAsteroidProperty {
@@ -116,6 +116,27 @@ extern const struct kAsteroidProperty {
     AsteroidPropertyType asteroidType;
 } kAsteroidProperty;
 
+// --------------------------------------------------------------------
+// Planet User Data Constants
+// --------------------------------------------------------------------
+/*!
+ * @typedef PlanetPropertyType
+ * @abstract A typedef for the __unsafe_unretained NSString *const strings used as keys in initializing an Planet's properties in didMoveToSceneWithUserData:
+ * @updated 11-08-2015
+ */
+typedef __unsafe_unretained NSString *const PlanetPropertyType;
+
+extern NSString *const PlanetPlistKey;
+
+/*!
+ * @namespace kPlanetProperty
+ * @abstract Contains the names of the plist keys for planet properties.
+ * @updated 11-08-2015
+ */
+extern const struct kPlanetProperty {
+    PlanetPropertyType gravityRadius;
+    PlanetPropertyType planetType;
+} kPlanetProperty;
 
 #pragma mark - Z Position Constants
 

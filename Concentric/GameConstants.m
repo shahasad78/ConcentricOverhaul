@@ -69,7 +69,13 @@ const struct kAsteroidProperty kAsteroidProperty = {
     .asteroidType   = @"asteroidType",
 };
 
-
+// --------------------------------------------------------------------
+// Planet Properties
+// --------------------------------------------------------------------
+const struct kPlanetProperty kPlanetProperty = {
+    .gravityRadius  = @"gravityRadius",
+    .planetType     = @"planetType",
+};
 // --------------------------------------------------------------------
 //  kConcentricAsset
 // --------------------------------------------------------------------
