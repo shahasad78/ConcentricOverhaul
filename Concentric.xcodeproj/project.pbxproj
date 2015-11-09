@@ -16,6 +16,7 @@
 		CB3CD5231BF0772500E9654E /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3CD5221BF0772500E9654E /* Score.m */; };
 		CB3CD5251BF098C900E9654E /* DefaultGameData.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB3CD5241BF098C900E9654E /* DefaultGameData.plist */; };
 		CB3CD5281BF1130300E9654E /* PlanetNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3CD5271BF1130300E9654E /* PlanetNode.m */; };
+		CB3CD52B1BF11FA600E9654E /* PowerUpNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3CD52A1BF11FA600E9654E /* PowerUpNode.m */; };
 		CBDB918B1BEFD00500647F5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDB918A1BEFD00500647F5E /* main.m */; };
 		CBDB918E1BEFD00500647F5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDB918D1BEFD00500647F5E /* AppDelegate.m */; };
 		CBDB91911BEFD00500647F5E /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDB91901BEFD00500647F5E /* GameScene.m */; };
@@ -89,6 +90,8 @@
 		CB3CD5241BF098C900E9654E /* DefaultGameData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = DefaultGameData.plist; path = Concentric/DefaultGameData.plist; sourceTree = "<group>"; };
 		CB3CD5261BF1130300E9654E /* PlanetNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanetNode.h; sourceTree = "<group>"; };
 		CB3CD5271BF1130300E9654E /* PlanetNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanetNode.m; sourceTree = "<group>"; };
+		CB3CD5291BF11FA600E9654E /* PowerUpNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PowerUpNode.h; sourceTree = "<group>"; };
+		CB3CD52A1BF11FA600E9654E /* PowerUpNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PowerUpNode.m; sourceTree = "<group>"; };
 		CBDB91861BEFD00500647F5E /* Concentric.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concentric.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBDB918A1BEFD00500647F5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CBDB918C1BEFD00500647F5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -433,6 +436,8 @@
 				CBDB920E1BEFD59200647F5E /* PlayerShipNode.m */,
 				CB3CD5261BF1130300E9654E /* PlanetNode.h */,
 				CB3CD5271BF1130300E9654E /* PlanetNode.m */,
+				CB3CD5291BF11FA600E9654E /* PowerUpNode.h */,
+				CB3CD52A1BF11FA600E9654E /* PowerUpNode.m */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -591,6 +596,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBDB920F1BEFD59200647F5E /* PlayerShipNode.m in Sources */,
+				CB3CD52B1BF11FA600E9654E /* PowerUpNode.m in Sources */,
 				CB3CD51F1BF072AE00E9654E /* GameData.m in Sources */,
 				CB3CD51C1BF05C8300E9654E /* SKScene+SKSLoader.m in Sources */,
 				CBDB91961BEFD00500647F5E /* GameViewController.m in Sources */,

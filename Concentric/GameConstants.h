@@ -183,6 +183,7 @@ extern const struct kNodeName {
     ConcentricNodeName planet;
     ConcentricNodeName asteroid;
     ConcentricNodeName wormhole;
+    ConcentricNodeName powerUp;
     ConcentricNodeName trajectoryLine;
 } kNodeName;
 

@@ -56,6 +56,7 @@ const struct kNodeName kNodeName = {
     .asteroid       = @"Asteroid",
     .wormhole       = @"Wormhole",
     .rectangle      = @"Rectangle",
+    .powerUp        = @"PowerUp",
     .trajectoryLine = @"TrajectoryLine",
 };
 // --------------------------------------------------------------------
