@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>currentLevel</key>
+	<integer>1</integer>
+	<key>currentScene</key>
+	<string>Level1</string>
 	<key>PlayerShipSettings</key>
 	<dict>
 		<key>Upgrades</key>
@@ -151,14 +155,5 @@
 		<key>Gravity</key>
 		<string>{ 0.0, 0.0 }</string>
 	</dict>
-	<key>LevelSettings</key>
-	<dict>
-		<key>currentLevel</key>
-		<integer>1</integer>
-	</dict>
-	<key>WormHole</key>
-	<string>wormhole</string>
-	<key>RingPlanet</key>
-	<string>ringplanet2</string>
 </dict>
 </plist>

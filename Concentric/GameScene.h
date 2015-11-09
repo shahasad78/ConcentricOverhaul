@@ -7,7 +7,7 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
-
+#import "GameData.h"
 
 #pragma mark - Protocol Declarations
 
@@ -34,6 +34,7 @@ NS_ASSUME_NONNULL_BEGIN
 // Level properties
 @property (strong, nonatomic) NSString *currentScene;
 @property (nonatomic) NSUInteger currentLevel;
+@property (strong, nonatomic) GameData *gameData;
 
 NS_ASSUME_NONNULL_END
 @end

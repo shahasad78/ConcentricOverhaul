@@ -10,15 +10,16 @@
 
 @interface GameData : NSObject <NSCoding>
 
-@property (strong, nonatomic, readonly) GameData *sharedGameData;
-
 // Scene Properties
 @property (strong, nonatomic) NSString *currentScene;
+@property (nonatomic) NSUInteger currentLevel;
+@property (strong, nonatomic) NSDictionary *sceneData;
 
 // Global Data Properties
-@property (nonatomic) NSArray<NSNumber *> *scores;
+@property (nonatomic) NSDictionary<NSString*,NSNumber*> *scores;
 @property (nonatomic) NSDictionary<NSString*,NSNumber*> *levelsCompleted;
 
-
++ (instancetype) sharedGameData;
+- (void) save;
 
 @end

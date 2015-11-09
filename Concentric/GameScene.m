@@ -7,9 +7,9 @@
 //
 
 #import "SKScene+SKSLoader.h"
-#import "GameScene.h"
 #import "PlayerShipNode.h"
 #import "PhysicsUtil.h"
+#import "GameScene.h"
 
 @interface GameScene ()
 
@@ -39,8 +39,17 @@
 #pragma mark - View Life Cycle Methods
 -(void)didMoveToView:(SKView *)view {
 
-    // TODO: Read Plist and get level specific data to pass to nodes
-    
+    self.gameData = [GameData sharedGameData];
+    self.gameData.currentScene = @"Level1";
+    self.gameData.currentLevel = 1;
+    [self.gameData save];
+
+    // Load the current Level Plist
+    NSString *currentScene = self.gameData.currentScene;
+    NSString *levelPath = [[NSBundle mainBundle] pathForResource:currentScene ofType:@"plist"];
+    NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:levelPath];
+    // TODO: Read Plist dict and get level specific data to pass to nodes
+
 
     // Setup PlayerShip and subscribe to its state changes
     self.playerShip = (PlayerShipNode *)[self childNodeWithName:[NSString stringWithFormat:@"//%@", kNodeName.playerShip]];
