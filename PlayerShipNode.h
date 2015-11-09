@@ -12,10 +12,10 @@
 
 @interface PlayerShipNode : SKSpriteNode <CustomNodeEvents, InteractiveNode>
 
-@property (nonatomic) SKSpriteNode *wingLightLeft;
-@property (nonatomic) SKSpriteNode *wingLightRight;
-@property (nonatomic) SKSpriteNode *thruster;
-@property (nonatomic) SKSpriteNode *shipGlow;
+// Ship State Properties
+@property (nonatomic) BOOL isDraggingShip;
+@property (nonatomic) BOOL shipIsInMotion;
+@property (nonatomic) BOOL didExplodeShip;
 
 
 - (CGVector) initialVelocityWithStartingPoint:(CGPoint)startPoint andEndPoint:(CGPoint)endPoint;

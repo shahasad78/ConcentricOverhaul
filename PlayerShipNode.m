@@ -11,12 +11,13 @@
 
 @interface PlayerShipNode ()
 
+// UI Properties
+@property (nonatomic) SKSpriteNode *wingLightLeft;
+@property (nonatomic) SKSpriteNode *wingLightRight;
+@property (nonatomic) SKSpriteNode *thruster;
+@property (nonatomic) SKSpriteNode *shipGlow;
 @property (nonatomic) SKShapeNode *trajectoryLine;
 
-// Ship State Properties
-@property (nonatomic) BOOL isDraggingShip;
-@property (nonatomic) BOOL shipIsInMotion;
-@property (nonatomic) BOOL didExplodeShip;
 
 @end
 

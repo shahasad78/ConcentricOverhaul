@@ -102,7 +102,7 @@ extern const struct kCircleAnimationActionKey {
  */
 typedef __unsafe_unretained NSString *const AsteroidPropertyType;
 
-NSString *const AsteroidPlistKey = @"AsteroidProperties";
+extern NSString *const AsteroidPlistKey;
 
 /*!
  * @namespace kCircleAnimationActionKey

@@ -10,6 +10,10 @@
 		CB3CD50F1BEFE66E00E9654E /* AsteroidNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3CD50E1BEFE66E00E9654E /* AsteroidNode.m */; };
 		CB3CD5111BEFF86200E9654E /* Meteors.atlas in Resources */ = {isa = PBXBuildFile; fileRef = CB3CD5101BEFF86200E9654E /* Meteors.atlas */; };
 		CB3CD5151BEFFEAC00E9654E /* Level1.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB3CD5141BEFFEAC00E9654E /* Level1.plist */; };
+		CB3CD5191BF05ADE00E9654E /* GameData.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB3CD5181BF05ADE00E9654E /* GameData.plist */; };
+		CB3CD51C1BF05C8300E9654E /* SKScene+SKSLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3CD51B1BF05C8300E9654E /* SKScene+SKSLoader.m */; };
+		CB3CD51F1BF072AE00E9654E /* GameData.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3CD51E1BF072AE00E9654E /* GameData.m */; };
+		CB3CD5231BF0772500E9654E /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3CD5221BF0772500E9654E /* Score.m */; };
 		CBDB918B1BEFD00500647F5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDB918A1BEFD00500647F5E /* main.m */; };
 		CBDB918E1BEFD00500647F5E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDB918D1BEFD00500647F5E /* AppDelegate.m */; };
 		CBDB91911BEFD00500647F5E /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDB91901BEFD00500647F5E /* GameScene.m */; };
@@ -73,6 +77,13 @@
 		CB3CD50E1BEFE66E00E9654E /* AsteroidNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsteroidNode.m; sourceTree = "<group>"; };
 		CB3CD5101BEFF86200E9654E /* Meteors.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Meteors.atlas; sourceTree = "<group>"; };
 		CB3CD5141BEFFEAC00E9654E /* Level1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level1.plist; sourceTree = "<group>"; };
+		CB3CD5181BF05ADE00E9654E /* GameData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = GameData.plist; path = Concentric/GameData.plist; sourceTree = "<group>"; };
+		CB3CD51A1BF05C8300E9654E /* SKScene+SKSLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKScene+SKSLoader.h"; sourceTree = "<group>"; };
+		CB3CD51B1BF05C8300E9654E /* SKScene+SKSLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKScene+SKSLoader.m"; sourceTree = "<group>"; };
+		CB3CD51D1BF072AE00E9654E /* GameData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameData.h; path = Concentric/GameData.h; sourceTree = "<group>"; };
+		CB3CD51E1BF072AE00E9654E /* GameData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameData.m; path = Concentric/GameData.m; sourceTree = "<group>"; };
+		CB3CD5211BF0772500E9654E /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Score.h; path = Concentric/Score.h; sourceTree = "<group>"; };
+		CB3CD5221BF0772500E9654E /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Score.m; path = Concentric/Score.m; sourceTree = "<group>"; };
 		CBDB91861BEFD00500647F5E /* Concentric.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concentric.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBDB918A1BEFD00500647F5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CBDB918C1BEFD00500647F5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -166,6 +177,18 @@
 				CBDB91C31BEFD22D00647F5E /* Entities */,
 			);
 			name = Scenes;
+			sourceTree = "<group>";
+		};
+		CB3CD5201BF076FE00E9654E /* GameData & Scores */ = {
+			isa = PBXGroup;
+			children = (
+				CB3CD5181BF05ADE00E9654E /* GameData.plist */,
+				CB3CD51D1BF072AE00E9654E /* GameData.h */,
+				CB3CD51E1BF072AE00E9654E /* GameData.m */,
+				CB3CD5211BF0772500E9654E /* Score.h */,
+				CB3CD5221BF0772500E9654E /* Score.m */,
+			);
+			name = "GameData & Scores";
 			sourceTree = "<group>";
 		};
 		CBDB917D1BEFD00500647F5E = {
@@ -388,6 +411,7 @@
 		CBDB92071BEFD3F600647F5E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CB3CD5201BF076FE00E9654E /* GameData & Scores */,
 				CBDB92081BEFD41600647F5E /* Entities */,
 			);
 			name = Model;
@@ -412,6 +436,8 @@
 				CBDB92141BEFD5D700647F5E /* GameConstants.m */,
 				CBDB92101BEFD59D00647F5E /* PhysicsUtil.h */,
 				CBDB92111BEFD59D00647F5E /* PhysicsUtil.m */,
+				CB3CD51A1BF05C8300E9654E /* SKScene+SKSLoader.h */,
+				CB3CD51B1BF05C8300E9654E /* SKScene+SKSLoader.m */,
 			);
 			name = "Utils, Categories & Constants";
 			sourceTree = "<group>";
@@ -508,6 +534,7 @@
 				CBDB91F01BEFD2D900647F5E /* ringplanet.png in Resources */,
 				CBDB91E91BEFD2D900647F5E /* o2tank.png in Resources */,
 				CBDB91FC1BEFD2D900647F5E /* thruster1.png in Resources */,
+				CB3CD5191BF05ADE00E9654E /* GameData.plist in Resources */,
 				CBDB919E1BEFD00500647F5E /* LaunchScreen.storyboard in Resources */,
 				CBDB919B1BEFD00500647F5E /* Assets.xcassets in Resources */,
 				CBDB91F71BEFD2D900647F5E /* story1.png in Resources */,
@@ -555,7 +582,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBDB920F1BEFD59200647F5E /* PlayerShipNode.m in Sources */,
+				CB3CD51F1BF072AE00E9654E /* GameData.m in Sources */,
+				CB3CD51C1BF05C8300E9654E /* SKScene+SKSLoader.m in Sources */,
 				CBDB91961BEFD00500647F5E /* GameViewController.m in Sources */,
+				CB3CD5231BF0772500E9654E /* Score.m in Sources */,
 				CB3CD50F1BEFE66E00E9654E /* AsteroidNode.m in Sources */,
 				CBDB918E1BEFD00500647F5E /* AppDelegate.m in Sources */,
 				CBDB91911BEFD00500647F5E /* GameScene.m in Sources */,

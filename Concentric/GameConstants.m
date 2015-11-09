@@ -61,6 +61,7 @@ const struct kNodeName kNodeName = {
 // --------------------------------------------------------------------
 // Asteroid Properties
 // --------------------------------------------------------------------
+NSString *const AsteroidPlistKey = @"AsteroidProperties";
 const struct kAsteroidProperty kAsteroidProperty = {
     .field          = @"field",
     .fieldRect      = @"fieldRect",

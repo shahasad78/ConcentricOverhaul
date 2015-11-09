@@ -29,4 +29,11 @@
 
 @interface GameScene : SKScene <SKPhysicsContactDelegate>
 
+NS_ASSUME_NONNULL_BEGIN
+
+// Level properties
+@property (strong, nonatomic) NSString *currentScene;
+@property (nonatomic) NSUInteger currentLevel;
+
+NS_ASSUME_NONNULL_END
 @end
